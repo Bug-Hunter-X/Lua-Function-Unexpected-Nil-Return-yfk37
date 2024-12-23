@@ -1,0 +1,3 @@
+# Lua Function Unexpected Nil Return
+
+This repository demonstrates a subtle bug in a Lua function where passing `nil` as the second argument results in an unexpected `nil` return value instead of an error or a default value. The function `foo` attempts to add two numbers.  If the first argument `a` is `nil`, it correctly returns `nil`. However, when the second argument `b` is `nil`, the function also returns `nil` even though the first argument is valid.  This behavior is unexpected and might lead to hard-to-debug issues.
